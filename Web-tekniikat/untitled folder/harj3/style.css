@@ -1,0 +1,8 @@
+.colored {
+    background-color: burlywood;
+}
+
+.important {
+    font-weight: bold;
+    color: red;
+}
