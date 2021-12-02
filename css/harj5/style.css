@@ -1,0 +1,26 @@
+div{
+    margin: 10px;
+    background-color: cornflowerblue;
+}
+
+.blue {
+    color: blue;
+}
+
+.blue {
+    color: yellow;
+}
+
+h1{
+    color: red;
+}
+#heading {
+    color: green;
+}
+.purple{
+    color: purple;
+}
+span {
+    font-weight: bold;
+    color: black;
+}
