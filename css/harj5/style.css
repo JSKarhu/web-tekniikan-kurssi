@@ -24,3 +24,7 @@ span {
     font-weight: bold;
     color: black;
 }
+input[required] {
+    border: 2px solid black;
+    margin: 2px;
+}
