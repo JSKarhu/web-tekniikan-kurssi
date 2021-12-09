@@ -17,3 +17,4 @@ xmlhttp.onreadystatechange=function() {
         document.getElementById("answer-image").setAttribute('src', answerObject.image);
     }
 }
+
