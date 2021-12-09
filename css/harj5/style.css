@@ -1,4 +1,4 @@
-div{
+div {
     margin: 10px;
     background-color: cornflowerblue;
 }
@@ -11,13 +11,13 @@ div{
     color: yellow;
 }
 
-h1{
+h1c{
     color: red;
 }
 #heading {
     color: green;
 }
-.purple{
+.purple {
     color: purple;
 }
 span {
@@ -27,4 +27,18 @@ span {
 input[required] {
     border: 2px solid black;
     margin: 2px;
+}
+
+input:focus {
+    border-color: yellow;
+}
+input:hover {
+    border-color: white;
+}
+
+
+/* Backened luo artikkeleja luokkamäärityksillä, joissa aina sana article. Case-insesitiivinen (i).*/
+[class^='article' i] {
+    background-color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
 }
