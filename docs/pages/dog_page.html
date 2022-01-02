@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <!-- Own CSS -->
+      <link rel="stylesheet" href="../css/build_styles.css">
+      <link rel="stylesheet" href="../css/dog-page.css">
+      <link rel="stylesheet" href="../css/responsive.css">
+      <title>Silvi</title>
+   </head>
+   <body>
+      <!-- Top Navigation Menu -->
+      <div class="navbar">
+         <ul class="nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about_me.html">My Hobbies</a></li>
+         </ul>
+      </div>
+      <div class="page-container">
+         <div class="content-wrap">
+            <h2>Meet Silvi.</h2>
+
+            <!-- carousel -->
+            <section class="carousel">
+               <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <img src="../img/silvi.png" class="d-block w-30" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                           <h5>This is Silvi</h5>
+                           <p>She is an mixbreed rescue dog from Romania.</p>
+                           <p>She is about two years old.</p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="../img/silvisecond.png" class="d-block w-30" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                           <p>Her ears don't match and she sheds a lot of fur</p>
+                           <p>She also likes to sleep. She is a good girl...</p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="../img/destruction.png" class="d-block w-30" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                           <p>...exept when she isn't.</p>
+                           <p>She had a adjustment period when she moved to Finland.</p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <img src="../img/silvithird.png" class="d-block w-30" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                           <p>Nevertheless, she is an absolute cutie.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                  </button>
+               </div>
+            </section>
+
+            <!-- info div hidden on load, appears visible when carousel captions disappear in mobile -->
+            <div class="info">She is an mixbreed rescue dog from Romania.
+               Because of her origins as a streetdog, her exact birthdate is unknown, but she is about two years old. She is a good girl... exept when she isn't (see picture #3).
+               She had a adjustment period when she moved to Finland. Nevertheless, she is an absolute cutie.
+            </div>
+
+            <!-- question and alert printing button  -->
+            <section class="question">
+               <label for="">Do you think Silvi is adorable?</label>
+               <label for="correct">Yes</label>&nbsp;<input type="radio" name="cute" id="correct">
+               <label for="incorrect">No</label>&nbsp;<input type="radio" name="cute" id="incorrect">
+               <button onclick="checkAnswer()" class="btn btn-primary btn-sm" id="check">Check</button>
+            </section>
+         </div>
+         <footer>
+            <a class="photo" href="https://en.wikipedia.org/wiki/Pineapple" title="photo" id="photo">Pineapple</a>
+         </footer>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="../js/code.js"></script>
+   </body>
+</html>

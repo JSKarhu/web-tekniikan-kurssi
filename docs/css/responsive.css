@@ -1,0 +1,81 @@
+
+/* responsive styles for all pages */
+@media screen and (max-width: 1010px) {
+
+    /* Main page responsive styles */
+    .page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: auto;
+        margin-right: auto;
+        margin-left: 20vw;
+        margin-bottom: 60px;
+    }
+
+    .card {
+        min-width: 62%;
+        margin-bottom: 10px;
+    }
+
+    /* hide footer image and link in all pages */
+    .photo {
+        display: none;
+    }
+
+    /* Hobbies page responsive styles */
+    /* hide images */
+    .image-section {
+        display: none;
+        
+    }
+
+    .btn-group, article {
+        margin-left: -10vw;
+        margin-right: 10vw;
+    }
+
+
+    /* Dog page responsive styles */
+    .carousel {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .d-block {
+        width: 70vw;
+        height: auto;
+    }
+
+    .question {
+        max-width: 90%;
+        width: fit-content;
+    }
+
+    footer {
+        padding: 10px;
+        background-color: #333;
+        min-height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/* additional Dog page responsive styles */
+@media screen and (max-width: 767px) {
+
+    /* info element becomes visible when carousel captions disappear */
+    .info {
+        display: block;
+        color: white;
+        background-color: rgba(7, 7, 32, 0.253);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+    }
+}

@@ -1,0 +1,136 @@
+/* variables for font & link-decoration */
+
+$font-color: white;
+$link-decoration: none;
+$bg-color: #333;
+
+/* mixin for certain links that have white font color & no decoration */
+
+@mixin link ($link: white) {
+    color: $link;
+    text-decoration: none;
+
+}
+/* mixin for background images */
+
+@mixin background {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar style */
+
+.navbar {
+    overflow: hidden;
+    background-color: $bg-color;
+    position: relative;
+
+    a {
+        @include link;
+        padding: 14px 16px;
+        font-size: 17px;
+        display: block
+    }
+    
+    a:hover {
+        font-weight: bold;
+        background-color: rgba(179, 88, 88, 0.178);
+        border-radius: 15px;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+
+/* content styles */
+
+body {
+    width: 100%;
+    background-image: url(../img/sunrise.png);
+    @include background;
+    
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 60px;
+}
+
+h1 {
+    padding-bottom: 10vh;
+    text-decoration: underline coral;
+}
+
+h1, h2 {
+    color: $font-color;
+    text-align: center;
+    margin: 15px;
+}
+
+span {
+    text-decoration: line-through black double;
+}
+
+h4 {
+    color: $font-color;
+    margin-left: 2vw;
+}
+
+/* content styles */
+
+.content {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 2vw;
+    
+}
+
+.card {
+    background-color: rgba(201, 91, 245, 0.753);
+    border-radius: 20px;
+    height: fit-content;
+
+    a {
+        @include link;
+    }
+}
+
+
+.accordion {
+    width: 50vw;
+
+    a {
+        text-decoration: $link-decoration;
+        color: black;
+    }
+    
+    a:hover {
+        font-weight: bold;
+        
+    }
+}
+
+
+/* footer styles */
+
+footer {
+    padding: 10px;
+    background-color: $bg-color;
+    min-height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.photo {
+    margin-left: 94vw;
+    background-image: url('../img/pineapple.png');
+    @include background;
+    padding: auto;
+    min-height: 45px;
+    text-indent:-9999px;
+    display: block;
+}
